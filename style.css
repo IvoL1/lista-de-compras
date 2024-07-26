@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+	overflow: hidden;
+	text-rendering: optimizeLegibility;
+}
+
+img {
+	display: block;
+	max-width: 100svh;
+	height: 100%;
+}
+
+:root {
+	--ff: "Inter", sans-serif;
+	--title: 700 1.5rem/2rem var(--ff);
+	--label: 600 1rem/1.25rem var(--ff);
+	--paragraph: 500 1rem/1.25rem var(--ff);
+	--link: 500 0.875rem/1rem var(--ff);
+
+	--background-primary: #f4f5fb;
+	--background-secondary: #ffffff;
+
+	--color-brand: #ca3884;
+	--color-brand-hover: #a52c6b;
+	--color-danger: #c93847;
+
+	--content-primary: #080b12;
+	--content-secondary: #374151;
+	--content-tertiary: #9ca3af;
+	--always-white: #ffffff;
+
+	--border-primary: #d1d5db;
+	--border-hover: #b9c2d0;
+}
+/* ========= GLOBAL CSS ============ */
