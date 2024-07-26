@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
 * {
 	margin: 0;
 	padding: 0;
@@ -44,4 +45,37 @@ img {
 	--border-primary: #d1d5db;
 	--border-hover: #b9c2d0;
 }
-/* ========= GLOBAL CSS ============ */
+/* ============ GLOBAL CSS ============ */
+
+/* ============ BODY ============ */
+body {
+	background-color: var(--background-primary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.56rem;
+	gap: 3.88rem;
+}
+/* ============ BODY ============ */
+
+/* ============ HEADER ============ */
+header {
+	display: flex;
+	align-items: center;
+	gap: 0.44rem;
+
+	& img {
+		width: 1.90706rem;
+		height: 1.45831rem;
+	}
+
+	& h1 {
+		font-family: "Sora", sans-serif;
+		color: #374151;
+		font-size: 1.66669rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+		letter-spacing: -0.03331rem;
+	}
+}
+/* ============ HEADER ============ */
