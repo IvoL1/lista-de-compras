@@ -29,6 +29,7 @@ img {
 	--label: 600 1rem/1.25rem var(--ff);
 	--paragraph: 500 1rem/1.25rem var(--ff);
 	--link: 500 0.875rem/1rem var(--ff);
+	--input: 400 1rem/1.4rem var(--ff);
 
 	--background-primary: #f4f5fb;
 	--background-secondary: #ffffff;
@@ -81,7 +82,9 @@ header {
 /* ============ HEADER ============ */
 
 /* ============ MAIN ============ */
-
+main {
+	width: 39.1875rem;
+}
 /* ============ MAIN ============ */
 
 /* ============ TITLE ============ */
@@ -112,3 +115,51 @@ header {
 	}
 }
 /* ============ TITLE ============ */
+
+/* ============ FORM ============ */
+form {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 2.75rem;
+
+	& input {
+		flex: 1;
+		height: 2.75rem;
+		padding-inline: 1.12rem;
+		border-radius: 0.75rem;
+		border: 0.125rem solid var(--border-primary);
+		background-color: var(--background-secondary);
+		font: var(--input);
+		color: var(--content-primary);
+		transition: border 0.3s;
+
+		&::placeholder {
+			color: var(--content-tertiary);
+		}
+		&:hover {
+			border: 0.125rem solid var(--border-hover);
+		}
+
+		&:focus {
+			outline: none;
+			border: 0.125rem solid var(--color-brand);
+		}
+	}
+
+	& button {
+		padding: 0.62rem 1.5rem;
+		height: 2.75rem;
+		border-radius: 0.75rem;
+		background-color: var(--color-brand);
+		color: var(--always-white);
+		font: var(--label);
+		border: none;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: var(--color-brand-hover);
+		}
+	}
+}
+/* ============ FORM ============ */
