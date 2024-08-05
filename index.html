@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<title>Lista de Compras</title>
 	</head>
+
 	<body>
 		<header>
 			<img src="assets/icons/logo.svg" alt="logo icon" />
@@ -21,10 +22,36 @@
 			</div>
 			<form>
 				<input type="text" placeholder="Adicione um novo item" id="inputTask" required />
-				<button>Adicionar item</button>
+				<button type="submit">Adicionar item</button>
 			</form>
-			<div class="tasks-list"></div>
-			<div class="alert-action"></div>
+			<ul class="task-wrapper">
+				<li>
+					<div onclick="checkElement(event)"></div>
+					<span>Pão de forma</span>
+					<img onclick="deleteElement(event)" class="trashs" src="assets/icons/trash.svg" alt="trash icon" />
+				</li>
+				<li>
+					<div onclick="checkElement(event)"></div>
+					<span>Café preto</span>
+					<img onclick="deleteElement(event)" class="trashs" src="assets/icons/trash.svg" alt="trash icon" />
+				</li>
+				<li>
+					<div onclick="checkElement(event)"></div>
+					<span>Suco de laranja</span>
+					<img onclick="deleteElement(event)" class="trashs" src="assets/icons/trash.svg" alt="trash icon" />
+				</li>
+				<li>
+					<div onclick="checkElement(event)"></div>
+					<span>Bolacha</span>
+					<img onclick="deleteElement(event)" class="trashs" src="assets/icons/trash.svg" alt="trash icon" />
+				</li>
+			</ul>
+			<div class="alert-action hidden">
+				<img src="assets/icons/warning.svg" alt="warning icon" />
+				<span>O item foi removido da lista</span>
+				<img onclick="closeElement(event)" src="assets/icons/delete-small.svg" alt="delete icon" />
+			</div>
 		</main>
+		<script src="script.js"></script>
 	</body>
 </html>
